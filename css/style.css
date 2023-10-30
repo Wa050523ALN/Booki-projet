@@ -59,6 +59,10 @@ form {
     justify-content: first baseline;
 }
 
+/* .loup{
+    display: none;     
+}  */
+/* icon loup masques*/
 .bouton {
     margin-left: -2px;
     padding: 15px 16px;
@@ -69,60 +73,61 @@ form {
     font-weight: 700;
 }
 
-/* svg i{
-width: 17px;
-height: 17px;
-fill: var(--White, #100c0c)
-}       */
-loupe label,
-input {
+label, input {
     border: solid var(--Grey, #F2F2F2);
-    color: var, Black;
+    color: Black;
     text-align: center;
     font-family: 'Raleway';
     font-size: 18px;
     font-weight: 700;
 
 }
+input::placeholder{
+    color: black;
+}
 
 /* marseil france */
-svg {
-    width: 50px;
-    height: 49px;
-    flex-shrink: 0;
-}
-section.Filtres{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    margin-right: 15px;
-    padding-top: 20px;
-}
+.iconloc{
 
-.Filtres h3{
-    display: flex; 
-    flex-direction: row;
-    align-items: flex-start; 
-    margin-right: 15px; 
+    border-radius: 15px 0px 0px 15px;
+    padding: 15px 16px;
+    background-color: rgba(242, 242, 242, 1); 
+    align-items: flex-start;
+    color: black;
+    padding-top: 20px;
+    
 } 
 
+/* icone localisation */
+
+
+.filtres{
+    display: flex;
+    /* flex-direction: row; */
+    align-items: center;
+    /* margin-right: 15px;
+    gap: 10px; */
+}
+
 /* filtte et paragraphe */
-.Filtres>.btnfiltres>i{
+.btnfiltres i {
     width: 26px;
     height: 26px;
     border: 4px 10px 4px 19px;
-} 
+}
 
 /*  */
 .btnfiltres {
-    border-radius: 50px;
+    margin: 20px 10px ;
+    border-radius: 50px; 
     border: 2px solid var(--grey-tint-2, #D9D9D9);
     display: flex;
-    height: 50px;
+    height: 35px; 
     padding: 4px 19px;
-    margin-right: 15px;
+    margin-right: 10px;
     align-items: center;
-    gap: 10px;
+    font-weight: bold;
+
 }
 
 /*  le changement de
@@ -131,13 +136,14 @@ couleur de fond lors du survol. */
     background-color: var(--blue-light, #DEEBFF);
 }
 
-/*  */
-/* p>i {
+.iconinfo{
+    display: flex;
+    align-items: center;
+/*    
     width: 24px;
-    height: 24px;
-    margin-right: 10px;
-    margin-bottom: 35p;
-} */
+    height: 24px; */
+
+}
 
 /* icone et paragraphe de 500 logts */
 
@@ -189,9 +195,70 @@ a {
 }
 
 /****** Hebergements ***********/
+
 .hebergements {
-    width: 65%;
+    width: 65%; 
+    
+
 }
+.hebergements-title{
+    display:flex;
+    padding: 30px; 
+}
+
+.hebergements p {
+    font-size: 1.3em;
+    font-family: Raleway;
+    font-weight: bold;
+}
+.marseil-cards{
+    
+    display: flex;
+    align-items: flex-start;
+    align-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    
+}
+
+.marseil-cards .card{
+    
+    /* width: 94%; 
+     height: 240px;   */ 
+    /* margin:auto ; 
+    /* gap: 3%;   */
+    /* display: flex; */
+    /* flex-direction: row;
+    justify-content: space-between; */
+}
+.marseil-cards img{
+    width: 240px;
+    height: 124px;
+    border-radius: 20px 20px 0px 0px;
+    
+}
+
+
+.marseil-cards .card-title{
+    font-size:16px ;
+    font-weight: bold;
+}
+.hebergements .card-subtitle{
+
+    font-size: 14px;
+    font-weight: 300; 
+    
+}
+.marseil-cards .euro{
+font-weight: bold;
+}
+
+.marseil-cards.ebergements .card-rating{
+width: 14.294px;
+height: 13.25px;
+}
+
 
 /****** Populaires ***********/
 .populaires {
@@ -202,6 +269,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 33px;
 }
 
 .populaires-cards .card {
@@ -223,6 +291,7 @@ a {
     flex-direction: column;
     justify-content: space-between;
     box-sizing: border-box;
+    flex-wrap: wrap;
 }
 
 .populaires-cards .card-title {
