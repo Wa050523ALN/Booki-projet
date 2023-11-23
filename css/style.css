@@ -59,9 +59,12 @@ form {
     justify-content: first baseline;
 }
 
-/* .loup{
-    display: none;     
-}  */
+.loupe {
+    display: none;
+    color: #DEEBFF;
+}
+
+
 /* icon loup masques*/
 .bouton {
     margin-left: -2px;
@@ -73,7 +76,8 @@ form {
     font-weight: 700;
 }
 
-label, input {
+label,
+input {
     border: solid var(--Grey, #F2F2F2);
     color: Black;
     text-align: center;
@@ -82,53 +86,53 @@ label, input {
     font-weight: 700;
 
 }
-input::placeholder{
+
+input::placeholder {
     color: black;
 }
 
 /* marseil france */
-.iconloc{
+.iconloc {
 
     border-radius: 15px 0px 0px 15px;
     padding: 15px 16px;
-    background-color: rgba(242, 242, 242, 1); 
+    background-color: rgba(242, 242, 242, 1);
     align-items: flex-start;
     color: black;
     padding-top: 20px;
-    
-} 
+
+}
 
 /* icone localisation */
 
 
-.filtres{
+.filtres {
     display: flex;
-    /* flex-direction: row; */
+    flex-direction: row;
     align-items: center;
-    /* margin-right: 15px;
-    gap: 10px; */
+    margin-right: 15px;
+    gap: 10px;
 }
 
 /* filtte et paragraphe */
 .btnfiltres i {
     width: 26px;
-    height: 26px;
     border: 4px 10px 4px 19px;
 }
 
 /*  */
 .btnfiltres {
-    margin: 20px 10px ;
-    border-radius: 50px; 
+    margin: 20px 10px;
+    border-radius: 50px;
     border: 2px solid var(--grey-tint-2, #D9D9D9);
     display: flex;
-    height: 35px; 
+    height: 35px;
     padding: 4px 19px;
-    margin-right: 10px;
     align-items: center;
     font-weight: bold;
 
 }
+
 
 /*  le changement de
 couleur de fond lors du survol. */
@@ -136,14 +140,26 @@ couleur de fond lors du survol. */
     background-color: var(--blue-light, #DEEBFF);
 }
 
-.iconinfo{
+.btninfo {
     display: flex;
     align-items: center;
-/*    
-    width: 24px;
-    height: 24px; */
+    justify-content: start;
+
 
 }
+
+.iconfo {
+    margin: 10px 10px;
+    border-radius: 50px;
+    border: 1px solid var(--grey-tint-2, #D9D9D9);
+    height: 24px;
+    font-weight: bold;
+    width: 24px;
+    text-align: center;
+    line-height: 24px;
+
+}
+
 
 /* icone et paragraphe de 500 logts */
 
@@ -197,68 +213,81 @@ a {
 /****** Hebergements ***********/
 
 .hebergements {
-    width: 65%; 
-    
-
+    width: 65%;
 }
-.hebergements-title{
-    display:flex;
-    padding: 30px; 
+
+.hebergements-title .section-title {
+    display: flex;
+    justify-content: start;
+    margin: 10px;
+    align-self: center;
+    margin: 0px 30px 30px 0px;
+    font-size: 22px;
+    gap: 30px;
+
 }
 
 .hebergements p {
-    font-size: 1.3em;
+    font-size: 22px;
     font-family: Raleway;
     font-weight: bold;
+    align-items: center;
 }
-.marseil-cards{
-    
+
+.marseil-cards {
+
     display: flex;
     align-items: flex-start;
     align-content: space-between;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 30px;
-    
+
 }
 
-.marseil-cards .card{
-    
+.marseil-cards .card {
+
     /* width: 94%; 
-     height: 240px;   */ 
+     height: 240px;   */
     /* margin:auto ; 
     /* gap: 3%;   */
     /* display: flex; */
     /* flex-direction: row;
     justify-content: space-between; */
 }
-.marseil-cards img{
+
+.marseil-cards img {
     width: 240px;
     height: 124px;
     border-radius: 20px 20px 0px 0px;
-    
+
 }
 
 
-.marseil-cards .card-title{
-    font-size:16px ;
+.marseil-cards .card-title {
+    font-size: 16px;
     font-weight: bold;
 }
-.hebergements .card-subtitle{
+
+.hebergements .card-subtitle {
 
     font-size: 14px;
-    font-weight: 300; 
-    
-}
-.marseil-cards .euro{
-font-weight: bold;
+    font-weight: 300;
+
 }
 
-.marseil-cards.ebergements .card-rating{
-width: 14.294px;
-height: 13.25px;
+.marseil-cards .euro {
+    font-weight: bold;
 }
 
+.marseil-cards.ebergements .card-rating {
+    width: 14.294px;
+    height: 13.25px;
+}
+
+.hebergements .affichplus {
+    font-size: 18px;
+}
 
 /****** Populaires ***********/
 .populaires {
@@ -307,14 +336,101 @@ height: 13.25px;
     margin-bottom: 5px;
 }
 
+/* activités à marseil */
+.activites-marseil {
+    /* width:100%; */
+    display: flex;
+    gap: 30px;
+    margin: 30px 30px 30px 30px;
 
+}
 
+.activités-titre {
+    font-size: 22px;
+    font-weight: 700;
+    font-weight: bold;
+    padding: 30PX 30PX 0PX 30PX;
+    margin: 30PX 0PX 0PX 0PX;
+}
 
+.activites-marseil .card {
+    width: 100%;
+    height: 439px;
+    border-radius: 20px 20px;
+    padding: 0px;
+
+}
+
+.activites-marseil img {
+    width: 100%;
+    height: 380px;
+    border-radius: 20px 20px 0px 0px;
+    padding: 0px;
+
+}
+
+.activites-marseil .card-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 18px 19px 20px 19px;
+
+}
+
+.activites-marseil>a {
+    width: 25%;
+}
+
+/* footer */
+.piedpage .piedpage-cadre {
+    /* display: flex; */
+    width: 100%;
+    padding: 20px;
+    margin: 35px 0px 58px 0px;
+    background: var(--Grey, #F2F2F2);
+}
+
+.piedpage-cadre {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    flex-direction: row;
+    align-content: stretch;
+    flex-grow: 1PX;
+    margin: 0%
+}
+
+.piedpage-cadre>ul {
+    list-style: none;
+}
+
+.piedpage .piedpage-cadre .element {
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    flex: 1 0 0;
+}
+
+.card-titre {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+/* piedpage-cadrefont-weight: bold;  */
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+    .filtres {
+        flex-wrap: wrap;
+    }
+
+    h3 {
+        width: 100%;
+        text-align: center;
+    }
+
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -349,5 +465,240 @@ height: 13.25px;
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+
     /* ... */
+    body {
+        margin: 0px;
+    }
+
+    .main-container {
+        padding: 20px;
+    }
+
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+    }
+
+    #logo {
+        display: flex;
+        padding: 30px 30px 30px 40px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    nav>ul {
+        display: flex;
+        padding: 0px 20px 15px 5px;
+        gap: 40px;
+        justify-content: space-around;
+    }
+
+    /* LOUP */
+    .loup {
+        margin-left: -2px;
+        padding: 15px 16px;
+        border-radius: 0px 15px 15px 0px;
+        border: 1px solid var(--Blue, #0065FC);
+        background: var(--Blue, #0065FC);
+        color: var(--Black, #f7f4f4);
+        font-weight: 700;
+
+    }
+
+    .bouton {
+        border-radius: 15px 15px 15px 15px;
+        margin-left: -10px;
+        border: 4px solid var(--Blue, #0065FC);
+    }
+
+    .btnfiltres {
+        width: 110px;
+    }
+
+    .loupe {
+        display: block;
+    }
+
+    .filtres {
+        margin: 0px;
+        display: flex;
+        flex-direction: row;
+        gap: 0px;
+        width: 375px;
+    }
+
+    .iconfo {
+        width: 36px;
+    }
+
+    .btnfiltres {
+        width: 120px;
+    }
+
+    .btninfo p {
+        margin: 35px -6px;
+        ;
+    }
+
+    h3 {
+        width: 100%;
+        text-align: justify;
+        margin: 32px 14px 18px -5px;
+    }
+
+    .bouton span {
+        display: none;
+    }
+
+
+    .hebergements-and-populaires section {
+        background: none;
+        border-radius: 0px;
+        box-sizing: border-box;
+        width: 375px;
+    }
+
+    .hebergements-and-populaires {
+        flex-direction: column-reverse;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .hebergements-and-populaires section {
+        margin: -12px;
+    }
+
+
+    .hebergements .card-subtitle {
+        margin: 3px 13px 7px 2px;
+    }
+
+    .section-title {
+        margin: 8px 17px 11px -10px;
+    }
+
+    .populaires-cards .card {
+        width: 335PX;
+        padding: 0px;
+        margin: 20px -5px 5px -9px;
+    }
+
+    .hebergements>a {
+        width: 315px;
+
+    }
+
+    .hebergements {
+        width: 315PX;
+
+    }
+
+    .hebergements .affichplus {
+
+        margin: 35px -15px;
+    }
+
+    .populaires {
+        background-color: var(--Grey, #F2F2F2) !important;
+        padding: 1px;
+        margin: 35px 0px 15px 0px;
+    }
+
+    .marseil-cards {
+        width: 335px;
+        display: flex;
+        align-items: flex-start;
+        align-content: space-between;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 30px;
+        margin: -19px;
+
+    }
+
+
+    .marseil-cards img {
+        width: 335px;
+        height: 192px;
+        border-radius: 20px 20px 0px 0px;
+
+    }
+
+    .marseil-cards.card {
+        width: 335px;
+    }
+
+    .marseil-cards.card .card-content {
+        height: 335px;
+    }
+
+    .marseil-cards .card-title {
+        margin: 11px 14px 13px 2px;
+    }
+
+    .card img {
+        height: 124px;
+    }
+
+    .activites-marseil .card {
+        width: 315PX;
+        height: 183px;
+        border-radius: 20px 20px;
+        padding: 0px;
+    }
+
+    .hebergements-title .section-title {
+        margin: 10px 20px 20px -13px;
+    }
+
+    .populaires-cards {
+        width: 192px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .populaires-cards a {
+        width: 100%;
+    }
+
+    .activites-marseil {
+        width: 100%;
+        flex-direction: column;
+        margin: 15px;
+    }
+
+    .activités-titre {
+        font-size: 22px;
+        font-weight: 700;
+        font-weight: bold;
+        padding: 0px;
+        margin: 13PX 0PX 0PX 16PX;
+    }
+
+    .activites-marseil a {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .piedpage-cadre element {
+        width: 100%;
+    }
+
+    .piedpage .piedpage-cadre {
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        padding: 0px;
+    }
+
+    .piedpage .piedpage-cadre {
+        box-sizing: border-box;
+    }
 }
