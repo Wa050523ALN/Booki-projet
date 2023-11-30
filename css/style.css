@@ -1,4 +1,4 @@
-/****** General ***********/
+/******General***********/
 * {
     font-family: 'Raleway', sans-serif;
 }
@@ -92,17 +92,16 @@ input::placeholder {
 
 /* marseil france */
 .iconloc {
-
     border-radius: 15px 0px 0px 15px;
     padding: 15px 16px;
     background-color: rgba(242, 242, 242, 1);
     align-items: flex-start;
     color: black;
     padding-top: 20px;
-
 }
 
 /* icone localisation */
+
 
 .filtres {
     display: flex;
@@ -128,8 +127,8 @@ input::placeholder {
     padding: 4px 19px;
     align-items: center;
     font-weight: bold;
-
 }
+
 
 /*  le changement de
 couleur de fond lors du survol. */
@@ -153,6 +152,10 @@ couleur de fond lors du survol. */
     text-align: center;
     line-height: 24px;
 }
+
+
+/* icone et paragraphe de 500 logts */
+
 
 a {
     color: inherit;
@@ -233,7 +236,6 @@ a {
     gap: 30px;
 }
 
-
 .marseil-cards img {
     width: 240px;
     height: 124px;
@@ -310,7 +312,9 @@ a {
     margin-bottom: 5px;
 }
 
+/* activités à marseil */
 .activites-marseil {
+    /* width:100%; */
     display: flex;
     gap: 30px;
     margin: 30px 30px 30px 30px;
@@ -348,7 +352,9 @@ a {
     width: 25%;
 }
 
+/* footer */
 .piedpage .piedpage-cadre {
+    /* display: flex; */
     width: 100%;
     padding: 20px;
     margin: 35px 0px 58px 0px;
@@ -392,18 +398,9 @@ a {
         flex-wrap: wrap;
     }
 
-    .btnfiltres {
-        margin: 20px -2px;
-    }
-
     h3 {
         width: 100%;
         text-align: start;
-        margin: 38px 0px 0px 0px;
-    }
-
-    .iconfo {
-        margin: -3px 8px -2px -3px;
     }
 
     .hebergements-and-populaires {
@@ -436,6 +433,14 @@ a {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+    .activites-marseil .card {
+        height: 250PX;
+    }
+
+    .activites-marseil img {
+        height: 180px;
+    }
 }
 
 /* Small devices (phones, less than 768px) */
@@ -444,10 +449,6 @@ a {
     /* ... */
     body {
         margin: 0px;
-    }
-
-    .main-container {
-        padding: 0px;
     }
 
     header {
@@ -466,10 +467,29 @@ a {
 
     nav>ul {
         display: flex;
-        margin: 8px 14px -5px 38px;
         padding: 0px 20px 15px 5px;
         gap: 40px;
         justify-content: space-around;
+    }
+
+    nav>ul li:hover {
+        color: #0065FC;
+    }
+
+    .navlinc:hover {
+        border-bottom: solid 2px rgb(54, 99, 223);
+        padding: 15px;
+        border-top: none;
+    }
+
+    .main-container {
+        padding: 20px;
+    }
+
+    /* LOUP */
+    .iconfo {
+        width: 36px;
+        margin: 8px 14px 9px 1px;
     }
 
     .loup {
@@ -488,20 +508,9 @@ a {
         border: 4px solid var(--Blue, #0065FC);
     }
 
-    .btnfiltres {
-        width: 121px;
-        margin: 17px 15px -1px -6px;
-    }
-
     .loupe {
         display: block;
     }
-
-    label,
-    input {
-        font-size: 1px;
-    }
-
 
     .filtres {
         margin: 0px;
@@ -511,19 +520,17 @@ a {
         width: 375px;
     }
 
-    .iconfo {
-        width: 33px;
-        margin: -9px 15px -1px -2px;
+    .btnfiltres {
+        width: 117px;
+        margin: 20px 28px 4px 0px;
     }
+
+    /* .btninfo {
+        gap: 3px;
+    }   */
 
     .btninfo p {
         margin: 35px -6px;
-    }
-
-    h3 {
-        width: 100%;
-        text-align: justify;
-        margin: 32px 14px 18px -2px;
     }
 
     .bouton span {
@@ -533,8 +540,8 @@ a {
     .hebergements-and-populaires section {
         background: none;
         border-radius: 0px;
-        box-sizing: border-box;
-        width: 100%;
+        margin: 5px -25px 0px -20px;
+        width: 119%;
     }
 
     .hebergements-and-populaires {
@@ -543,36 +550,55 @@ a {
         margin: 0px;
     }
 
-    /* .hebergements-and-populaires section {
-        margin: -20px;
-        padding: 45px;
-    } */
+    .hebergements {
+        width: 315PX;
+    }
 
+    .hebergements-title .section-title {
+        margin: 10px 20px 19px -9px;
+    }
 
     .hebergements .card-subtitle {
         margin: 3px 13px 7px 2px;
     }
 
     .section-title {
-        margin: 5px 17px 11px -13px;
-    }
-
-    .populaires-cards .card {
-        width: 335PX;
-        padding: 0px;
-        margin: 20px -5px 5px -9px;
+        margin: 8px 17px 11px -10px;
     }
 
     .hebergements>a {
         width: 315px;
     }
 
-    .hebergements {
-        width: 315PX;
-    }
-
     .hebergements .affichplus {
         margin: 35px -15px;
+    }
+
+    .populaires-cards {
+        width: 192px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .populaires-cards a {
+        width: 100%;
+    }
+
+    .populaires-cards .card {
+        width: 348px;
+        margin: 20px 0px 5px -9px;
+    }
+
+    .populaires-cards .card-title {
+        width: 162px;
+        font-size: 16px;
+    }
+
+    h3 {
+        width: 100%;
+        text-align: justify;
+        margin: 32px 14px 18px 0px;
     }
 
     .populaires {
@@ -589,10 +615,11 @@ a {
         flex-wrap: wrap;
         justify-content: space-between;
         gap: 30px;
-        margin: -19px;
+        margin: 20px -5px 5px -9px;
     }
+
     .marseil-cards img {
-        width: 335px;
+        width: 349px;
         height: 192px;
         border-radius: 20px 20px 0px 0px;
     }
@@ -620,25 +647,12 @@ a {
         padding: 0px;
     }
 
-    .hebergements-title .section-title {
-        margin: 42px 20px 37px -13px;
-    }
-
-    .populaires-cards {
-        width: 192px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    .populaires-cards a {
-        width: 100%;
-    }
-
     .activites-marseil {
         width: 100%;
         flex-direction: column;
+        margin: 15px;
         padding: 5px;
+        gap: 16px;
     }
 
     .activités-titre {
@@ -646,7 +660,7 @@ a {
         font-weight: 700;
         font-weight: bold;
         padding: 0px;
-        margin: 13PX 0PX 0PX 16PX;
+        margin: 16PX 0PX 23PX 16PX;
     }
 
     .activites-marseil a {
@@ -656,6 +670,11 @@ a {
         flex-wrap: wrap;
     }
 
+    .piedpage {
+        margin: 81px -22px 0px -40px;
+        height: 315px;
+    }
+
     .piedpage-cadre element {
         width: 100%;
     }
@@ -663,10 +682,11 @@ a {
     .piedpage .piedpage-cadre {
         display: flex;
         flex-direction: column;
-        margin: 65px 9px;
+        margin: 21px;
         padding: 0px;
-        box-sizing: border-box;
     }
 
-
+    .piedpage .piedpage-cadre {
+        box-sizing: border-box;
+    }
 }
