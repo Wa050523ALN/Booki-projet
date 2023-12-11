@@ -16,6 +16,7 @@
 body {
     display: flex;
     justify-content: center;
+    margin-top: 0px;
 }
 
 .main-container {
@@ -39,6 +40,7 @@ header {
 
 nav>ul {
     list-style: none;
+    margin-top: 0px;
 }
 
 nav>ul>li {
@@ -65,7 +67,6 @@ nav>ul li:hover {
 
 .navlinc:hover {
     border-top: solid 2px rgb(0, 68, 255);
-
 }
 
 form {
@@ -482,14 +483,15 @@ a {
     nav>ul {
         display: flex;
         padding: 0px 20px 15px 5px;
-        gap: 40px;
+        gap: 83px;
         justify-content: space-around;
+        margin: -19px;
     }
 
 
     .navlinc:hover {
         border-bottom: solid 2px rgb(54, 99, 223);
-        padding: 15px;
+        padding: 0px; 
         border-top: none;
     }
 
@@ -498,7 +500,6 @@ a {
     }
 
     .iconfo {
-        width: 36px;
         margin: 8px 14px 9px 1px;
     }
 
@@ -720,18 +721,23 @@ padding: 0px 20px 15px 5px;
     border-top: solid 2px white;
 
 }
+.iconfo{
+    min-width: 24px;
+}
 
 .navlinc:hover {
-    border-bottom: solid 2px rgb(4, 0, 255);  
+    padding: 20px;
     width: 100%; 
 
 }  
 
 h1{
     font-size: 16px;
+    padding: 5px;
+    flex-direction: column;
 }
 p{
-    font-size: 15px;
+    font-size: 13px;
 }
 
 .btninfo p {
