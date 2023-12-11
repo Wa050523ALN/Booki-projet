@@ -45,13 +45,27 @@ nav>ul>li {
     display: inline-block;
 }
 
+nav>ul li:hover {
+    color: #0065FC;
+    }
+
 .navlinc {
     padding: 0px 25px;
-    /* j'ai fait l'espace entre hebergement et activite */
+    display: inline-block;
+    line-height: 65px;
+    border-top: solid 2px white;
+        
 }
 
+
+
+
+    /* j'ai fait l'espace entre hebergement et activite */
+
+
 .navlinc:hover {
-    border-top: solid 2px rgb(4, 0, 255);
+    border-top: solid 2px rgb(0, 68, 255);
+
 }
 
 form {
@@ -60,7 +74,7 @@ form {
 }
 
 .loupe {
-    display: none;
+    display: none; 
     color: #DEEBFF;
 }
 
@@ -472,9 +486,6 @@ a {
         justify-content: space-around;
     }
 
-    nav>ul li:hover {
-        color: #0065FC;
-    }
 
     .navlinc:hover {
         border-bottom: solid 2px rgb(54, 99, 223);
@@ -486,7 +497,6 @@ a {
         padding: 20px;
     }
 
-    /* LOUP */
     .iconfo {
         width: 36px;
         margin: 8px 14px 9px 1px;
@@ -524,10 +534,6 @@ a {
         width: 117px;
         margin: 20px 28px 4px 0px;
     }
-
-    /* .btninfo {
-        gap: 3px;
-    }   */
 
     .btninfo p {
         margin: 35px -6px;
@@ -690,3 +696,60 @@ a {
         box-sizing: border-box;
     }
 }
+
+
+/* Small devices (phones, less than 370px) */
+@media (max-width: 370px){
+    header {
+        display: flex;
+        justify-content: space-between;
+}
+#logo {
+    display: flex;
+    padding: 30px 37px 30px 154px;
+}
+nav>ul {
+gap: 83px;
+margin: -21px;
+padding: 0px 20px 15px 5px;
+}
+
+.navlinc{
+    display:inline; 
+    padding:0px 25px ; 
+    border-top: solid 2px white;
+
+}
+
+.navlinc:hover {
+    border-bottom: solid 2px rgb(4, 0, 255);  
+    width: 100%; 
+
+}  
+
+h1{
+    font-size: 16px;
+}
+p{
+    font-size: 15px;
+}
+
+.btninfo p {
+    font-size: 13px; 
+}
+
+    .populaires-cards {
+    width: 0px;
+    }
+
+    .hebergements-and-populaires section {
+        
+        width: 394PX;
+}
+
+.piedpage .piedpage-cadre {
+    width: 394px
+
+    }
+
+} 
