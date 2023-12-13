@@ -66,14 +66,13 @@ nav>ul li:hover {
 
 form {
     display: flex;
-    justify-content: first baseline;
+    
 }
 
 .loupe {
     display: none;
     color: #DEEBFF;
 }
-
 
 /* icon loup masques*/
 .bouton {
@@ -124,7 +123,7 @@ input::placeholder {
 /* filtte et paragraphe */
 .btnfiltres i {
     width: 26px;
-    border: 4px 10px 4px 19px;
+    border: 4px;
 }
 
 /*  */
@@ -376,7 +375,7 @@ a {
     flex-wrap: wrap-reverse;
     flex-direction: row;
     align-content: stretch;
-    flex-grow: 1PX;
+    flex-grow: 1;  
     margin: 0%
 }
 
