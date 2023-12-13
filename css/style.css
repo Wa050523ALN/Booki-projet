@@ -49,22 +49,17 @@ nav>ul>li {
 
 nav>ul li:hover {
     color: #0065FC;
-    }
+}
 
 .navlinc {
     padding: 0px 25px;
     display: inline-block;
     line-height: 65px;
     border-top: solid 2px white;
-        
+
 }
 
-
-
-
-    /* j'ai fait l'espace entre hebergement et activite */
-
-
+/* j'ai fait l'espace entre hebergement et activite */
 .navlinc:hover {
     border-top: solid 2px rgb(0, 68, 255);
 }
@@ -75,7 +70,7 @@ form {
 }
 
 .loupe {
-    display: none; 
+    display: none;
     color: #DEEBFF;
 }
 
@@ -487,11 +482,10 @@ a {
         justify-content: space-around;
         margin: -19px;
     }
-
-
+    
     .navlinc:hover {
         border-bottom: solid 2px rgb(54, 99, 223);
-        padding: 0px; 
+        padding: 0px;
         border-top: none;
     }
 
@@ -700,62 +694,65 @@ a {
 
 
 /* Small devices (phones, less than 370px) */
-@media (max-width: 370px){
+@media (max-width: 370px) {
     header {
         display: flex;
         justify-content: space-between;
-}
-#logo {
-    display: flex;
-    padding: 30px 37px 30px 154px;
-}
-nav>ul {
-gap: 83px;
-margin: -21px;
-padding: 0px 20px 15px 5px;
-}
+    }
 
-.navlinc{
-    display:inline; 
-    padding:0px 25px ; 
-    border-top: solid 2px white;
+    #logo {
+        display: flex;
+        padding: 30px 37px 30px 154px;
+    }
 
-}
-.iconfo{
-    min-width: 24px;
-}
+    nav>ul {
+        gap: 83px;
+        margin: -21px;
+        padding: 0px 20px 15px 5px;
+    }
 
-.navlinc:hover {
-    padding: 20px;
-    width: 100%; 
+    .navlinc {
+        display: inline;
+        padding: 0px 25px;
+        border-top: solid 2px white;
 
-}  
+    }
 
-h1{
-    font-size: 16px;
-    padding: 5px;
-    flex-direction: column;
-}
-p{
-    font-size: 13px;
-}
+    .iconfo {
+        min-width: 24px;
+    }
 
-.btninfo p {
-    font-size: 13px; 
-}
+    .navlinc:hover {
+        padding: 20px;
+        width: 100%;
+
+    }
+
+    h1 {
+        font-size: 16px;
+        padding: 5px;
+        flex-direction: column;
+    }
+
+    p {
+        font-size: 13px;
+    }
+
+    .btninfo p {
+        font-size: 13px;
+    }
 
     .populaires-cards {
-    width: 0px;
+        width: 0px;
     }
 
     .hebergements-and-populaires section {
-        
+
         width: 394PX;
-}
-
-.piedpage .piedpage-cadre {
-    width: 394px
-
     }
 
-} 
+    .piedpage .piedpage-cadre {
+        width: 394px
+    }
+
+}
