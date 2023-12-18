@@ -440,11 +440,15 @@ a {
     }
 
     .populaires-cards .card-subtitle {
-        font-size: 13px;
+        font-size: 12px;
     }
 
     .activites-marseil .card {
         height: 250PX;
+    }
+
+    .activites-marseil .card-title {
+        font-size: 13px;
     }
 
     .activites-marseil img {
@@ -634,6 +638,7 @@ a {
 
     .marseil-cards .card-title {
         margin: 11px 14px 13px 2px;
+
     }
 
     .card img {
