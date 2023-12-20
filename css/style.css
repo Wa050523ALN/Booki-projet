@@ -450,6 +450,9 @@ a {
     .activites-marseil img {
         height: 180px;
     }
+    .activites-marseil .card-title {
+        font-size: 13px;
+        }
 }
 
 /* Small devices (phones, less than 768px) */
