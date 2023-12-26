@@ -167,6 +167,7 @@ couleur de fond lors du survol. */
 
 
 a {
+    width: 28%;
     color: inherit;
     text-decoration: none;
 }
@@ -236,7 +237,7 @@ a {
 }
 
 .marseil-cards {
-
+    width: auto;
     display: flex;
     align-items: flex-start;
     align-content: space-between;
@@ -246,9 +247,9 @@ a {
 }
 
 .marseil-cards img {
-    width: 240px;
+    width: 102%;
     height: 124px;
-    border-radius: 20px 20px 0px 0px;
+    border-radius: 12px 20px 0px 0px;
 }
 
 .marseil-cards .card-title {
@@ -397,6 +398,7 @@ a {
     font-size: 18px;
 }
 
+
 /* piedpage-cadrefont-weight: bold;  */
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
@@ -412,9 +414,28 @@ a {
         text-align: start;
     }
 
+    .btnfiltres {
+        /* width: 17%; */
+        padding: 4px 12px;
+        height: 25px;
+        font-size: 14px;
+        gap: 3px;
+    }
+
+    /* .btnfiltres i{
+        width: 20%;
+        height: 20px;
+    } */
+
     .hebergements-and-populaires {
         flex-direction: column;
     }
+
+    /* .hebergements-and-populaires section {
+        
+        box-sizing: 100;
+
+} */
 
     .hebergements {
         width: 100%;
@@ -450,9 +471,14 @@ a {
     .activites-marseil img {
         height: 180px;
     }
+
     .activites-marseil .card-title {
         font-size: 13px;
-        }
+    }
+
+    .hebergements-card.card {
+        width: 10%;
+    }
 }
 
 /* Small devices (phones, less than 768px) */
@@ -465,30 +491,37 @@ a {
 
     header {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
         justify-content: space-around;
     }
 
     #logo {
         display: flex;
-        padding: 30px 30px 30px 40px;
-        flex-direction: column;
+        flex-wrap: wrap;
+        margin-left: 143px;
+        padding: 30px 30px 30px 30px;
         align-items: flex-start;
         gap: 10px;
     }
 
-    nav>ul {
-        display: flex;
-        padding: 0px 20px 15px 5px;
-        gap: 83px;
-        justify-content: space-around;
-        margin: -19px;
+    navlinc {
+        padding: 0px 25px 0px 65px;
+        flex-wrap: wrap;
     }
 
     .navlinc:hover {
         border-bottom: solid 2px rgb(54, 99, 223);
+
+    }
+
+    .navlinc:hover {
         padding: 0px;
         border-top: none;
+    }
+
+    label,
+    input {
+        font-size: 22px;
     }
 
     .main-container {
@@ -542,9 +575,14 @@ a {
 
     .hebergements-and-populaires section {
         background: none;
+        display: block;
         border-radius: 0px;
         margin: 5px -25px 0px -20px;
-        width: 119%;
+        width: 176%;
+    }
+
+    .hebergements-card.card {
+        display: none;
     }
 
     .hebergements-and-populaires {
@@ -553,9 +591,9 @@ a {
         margin: 0px;
     }
 
-    .hebergements {
+    /* .hebergements {
         width: 315PX;
-    }
+    } */
 
     .hebergements-title .section-title {
         margin: 10px 20px 19px -9px;
@@ -611,8 +649,9 @@ a {
     }
 
     .marseil-cards {
-        width: 335px;
+        width: 100%;
         display: flex;
+        flex-direction: column;
         align-items: flex-start;
         align-content: space-between;
         flex-wrap: wrap;
@@ -622,17 +661,15 @@ a {
     }
 
     .marseil-cards img {
-        width: 349px;
-        height: 192px;
+        /* width: 349px;
+        height: 192px; */
         border-radius: 20px 20px 0px 0px;
     }
 
-    .marseil-cards.card {
-        width: 335px;
-    }
 
-    .marseil-cards.card .card-content {
-        height: 335px;
+    a {
+        width: 100%;
+
     }
 
     .marseil-cards .card-title {
@@ -683,6 +720,7 @@ a {
     }
 
     .piedpage .piedpage-cadre {
+        width: 100%;
         display: flex;
         flex-direction: column;
         margin: 21px;
@@ -691,18 +729,23 @@ a {
 
     .piedpage .piedpage-cadre {
         box-sizing: border-box;
+        width: 117%;
     }
-}
 
 
-/* Small devices (phones, less than 370px) */
-@media (max-width: 370px) {
+
+    /* §
+ /* Small devices (phones, less than 370px) */
+    /* @media (max-width: 370px) { */
+
+
     header {
         display: flex;
         justify-content: space-between;
     }
 
     #logo {
+        margin-left: -29px;
         display: flex;
         padding: 30px 37px 30px 154px;
     }
@@ -756,5 +799,4 @@ a {
     .piedpage .piedpage-cadre {
         width: 394px
     }
-
 }
