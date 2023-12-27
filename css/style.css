@@ -62,6 +62,7 @@ nav>ul li:hover {
 /* j'ai fait l'espace entre hebergement et activite */
 .navlinc:hover {
     border-top: solid 2px rgb(0, 68, 255);
+    width: 100%;
 }
 
 form {
@@ -167,7 +168,7 @@ couleur de fond lors du survol. */
 
 
 a {
-    width: 28%;
+    width: 30%;
     color: inherit;
     text-decoration: none;
 }
@@ -180,7 +181,7 @@ a {
 .card {
     background-color: white;
     border-radius: 20px;
-    padding: 5px;
+    padding: 0px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
@@ -237,33 +238,41 @@ a {
 }
 
 .marseil-cards {
-    width: auto;
+    width: 100%;
     display: flex;
     align-items: flex-start;
     align-content: space-between;
     flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 30px;
+    justify-content: center;
+    gap: 26px;
 }
 
 .marseil-cards img {
-    width: 102%;
+    width: 97%;
     height: 124px;
     border-radius: 12px 20px 0px 0px;
+    margin-top: 4px;
+    margin-left: 4px;
+    
 }
 
 .marseil-cards .card-title {
-    font-size: 16px;
+    font-size: 13px;
     font-weight: bold;
+    margin: 9px;
 }
 
 .hebergements .card-subtitle {
     font-size: 14px;
     font-weight: 300;
+    margin: 9px;
 }
 
 .marseil-cards .euro {
     font-weight: bold;
+}
+.marseil-cards .card-rating{
+    margin: 9px;
 }
 
 .marseil-cards.ebergements .card-rating {
@@ -422,6 +431,8 @@ a {
         gap: 3px;
     }
 
+    
+
     /* .btnfiltres i{
         width: 20%;
         height: 20px;
@@ -490,23 +501,39 @@ a {
     }
 
     header {
+        
         display: flex;
+        justify-content: space-between; 
         flex-direction: column;
-        justify-content: space-around;
+        
     }
 
     #logo {
         display: flex;
         flex-wrap: wrap;
-        margin-left: 143px;
-        padding: 30px 30px 30px 30px;
+        padding: 30px 30px 30px 230px;
         align-items: flex-start;
         gap: 10px;
     }
+    header {
+        display: flex;
+        justify-content: space-between;
+    } 
 
-    navlinc {
-        padding: 0px 25px 0px 65px;
-        flex-wrap: wrap;
+    #logo {
+        margin-left: -29px;
+        display: flex;
+        padding: 30px 37px 30px 154px;
+    } 
+
+    nav>ul {
+        gap: 83px;
+        margin: -21px;
+        padding: 0px 20px 15px 5px;
+    } 
+    .navlinc {
+    display: flex;
+    justify-content: space-around;
     }
 
     .navlinc:hover {
@@ -523,7 +550,10 @@ a {
     input {
         font-size: 22px;
     }
-
+    .bouton {
+        margin-left: -6px;
+    }
+    
     .main-container {
         padding: 20px;
     }
@@ -616,7 +646,7 @@ a {
     }
 
     .populaires-cards {
-        width: 192px;
+        width: 38%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -627,13 +657,17 @@ a {
     }
 
     .populaires-cards .card {
-        width: 348px;
+        width: 156%;
         margin: 20px 0px 5px -9px;
     }
 
     .populaires-cards .card-title {
-        width: 162px;
-        font-size: 16px;
+        width: 100%;
+        
+    }
+
+    .populaires-cards img {
+        width: 20%;
     }
 
     h3 {
@@ -649,7 +683,6 @@ a {
     }
 
     .marseil-cards {
-        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -661,14 +694,12 @@ a {
     }
 
     .marseil-cards img {
-        /* width: 349px;
-        height: 192px; */
-        border-radius: 20px 20px 0px 0px;
+    width: 100px;
+        
     }
 
-
     a {
-        width: 100%;
+        width: 60%;
 
     }
 
@@ -676,13 +707,12 @@ a {
         margin: 11px 14px 13px 2px;
     }
 
-    .card img {
+    .marseil-cards img {
         height: 124px;
-    }
+        width: 99%;
+    } 
 
     .activites-marseil .card {
-        width: 315PX;
-        height: 183px;
         border-radius: 20px 20px;
         padding: 0px;
     }
@@ -694,6 +724,12 @@ a {
         padding: 5px;
         gap: 16px;
     }
+    .activites-marseil img{
+        width: 100%;
+
+    }
+
+
 
     .activités-titre {
         font-size: 22px;
@@ -729,32 +765,32 @@ a {
 
     .piedpage .piedpage-cadre {
         box-sizing: border-box;
-        width: 117%;
+        width: 162%;
     }
 
+}
 
 
-    /* §
  /* Small devices (phones, less than 370px) */
-    /* @media (max-width: 370px) { */
+    /* @media (max-width: 370px) { 
 
 
     header {
         display: flex;
         justify-content: space-between;
-    }
+    } 
 
     #logo {
         margin-left: -29px;
         display: flex;
         padding: 30px 37px 30px 154px;
-    }
+    } 
 
     nav>ul {
         gap: 83px;
         margin: -21px;
         padding: 0px 20px 15px 5px;
-    }
+    } 
 
     .navlinc {
         display: inline;
@@ -799,4 +835,4 @@ a {
     .piedpage .piedpage-cadre {
         width: 394px
     }
-}
+}  
